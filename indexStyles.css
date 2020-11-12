@@ -1,0 +1,210 @@
+#landingSection{
+  background-image: url('images/landing-bg.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  transition: opacity 1.5s linear;
+}
+
+#titleWrapper{
+  justify-content: center;
+  vertical-align: center;
+  text-align: center;
+}
+
+#siteTitle{
+  margin: 0 auto;
+  color: #4e4675;
+  font-size: 6em;
+  letter-spacing: 30px;
+  position: relative;
+  cursor: default;
+  user-select: none;
+  margin-top: 200px;
+  text-shadow: 2px 2px 1px black;
+}
+@media (max-width: 768px) {
+  #siteTitle{
+    font-size: 2em;
+    letter-spacing: 20px;
+  }
+}
+.ml9 {
+  position: relative;
+}
+.ml9 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+.ml9 .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+
+
+.circleButton{
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+.circleButton i{
+  opacity: 0.8;
+  position: relative;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  background-color: #fb916e;
+  color: #4e4675;
+  box-shadow: 2px 2px 1px black;
+  cursor: pointer;
+}
+.circleButton i:hover{
+  transform: scale(1.15);
+  opacity: 0.9;
+}
+
+#characters,#toPak{
+  display: none;
+}
+#char1 img, #char2 img, #char1LScene img, #char2LScene img{
+  width: 40%;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
+#char1,#char1LScene{position: relative;opacity: 0;transition: opacity 2s linear;}
+#char2,#char2LScene{position: relative;opacity: 0;transition: opacity 2s linear;}
+@media (max-width: 992px) {
+  #char1 img, #char2 img, #char1LScene img, #char2LScene img{
+    width: 60%;
+    transform: translate(-50%);
+  }
+}
+@media (max-width: 768px) {
+  #char1 img, #char2 img, #char1LScene img, #char2LScene img{
+    width: 80%;
+    transform: translate(-50%);
+  }
+}
+
+.pak_map_wrapper,.viet_map_wrapper{
+  width: 48%;
+  margin: 0 auto;
+}
+.viet_map_wrapper svg {
+	width: 40%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 40px;
+}
+@media (max-width: 992px) {
+  .pak_map_wrapper svg{
+    position: relative;
+    top: 50% !important;
+    transform: translateY(-50%);
+  }
+  .viet_map_wrapper svg{
+    position: relative;
+    top: 50% !important;
+    transform: translate(-50%,-50%);
+    margin-top: 0;
+  }
+  .pak_map_wrapper,.viet_map_wrapper{
+    width: 70%;
+    height: inherit;
+  }
+}
+@media (max-width: 768px) {
+  .pak_map_wrapper svg{
+    position: relative;
+    top: 50% !important;
+    transform: translateY(-50%);
+  }
+  .viet_map_wrapper svg{
+    position: relative;
+    top: 50% !important;
+    transform: translate(-50%,-50%);
+    margin-top: 0;
+  }
+  .pak_map_wrapper,.viet_map_wrapper{
+    width: 90%;
+    height: inherit;
+  }
+}
+#pakistan,#vietnam,#lastScene{
+  background: #7CB9E8;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: none;
+  overflow: clip;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  transition: opacity 1.5s linear;
+}
+.instructions{
+  position: fixed;
+  top: 0;
+  left: 10%;
+  margin: 0;
+}
+#balochistan,
+#kashmir,
+#north,
+#fata,
+#punjab,
+#sindh,
+#kpk,
+#northViet,
+#central,
+#south{cursor: pointer;}
+
+#balochistan:hover,
+#kashmir:hover,
+#north:hover,
+#fata:hover,
+#punjab:hover,
+#sindh:hover,
+#kpk:hover,
+#northViet:hover,
+#central:hover,
+#south:hover{fill: #fff; fill-opacity:0.9;}
+
+.myBtn{
+	padding: 20px 10px;
+	position: absolute;
+	bottom: 20px;
+	transform: translateX(-100%);
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid #4e4675;
+	background-color: #fb916e;
+	width: 100px;
+	left: 95%;
+	margin: 0;
+  cursor: pointer;
+}
+.myBtn:hover{
+	color: #fb916e;
+	background-color: #4e4675;
+}
+.btnText {
+	font-size: 1.2em;
+	color: white;
+	margin: 0;
+}
