@@ -1,4 +1,7 @@
 var modal;
+
+// display the relevant modal and play the relevant sound track upon which button is clicked
+
 var pakInstructions=document.getElementById('pakInstructions');
 var vietnamInstructions=document.getElementById('vietnamInstructions');
 // Get the modal
@@ -14,10 +17,11 @@ balochistanBtn.onclick = function() {
   pakInstructions.style.display="none";
   balochistanModal.style.display = "block";
   modal=balochistanModal;
+  //play the relevant music file
   balochistanMusic.play();
   music=balochistanMusic;
 }
-// When the user clicks on <span> (x), close the modal
+// When the user clicks on <span> (x), close the modal and stop the music and stop the music
 balochistanClose.onclick = function() {
   balochistanModal.style.display = "none";
   balochistanMusic.pause();
@@ -40,7 +44,7 @@ kashmirBtn.onclick = function() {
   kashmirMusic.play();
   music=kashmirMusic;
 }
-// When the user clicks on <span> (x), close the modal
+// When the user clicks on <span> (x), close the modal and stop the music
 kashmirClose.onclick = function() {
   kashmirModal.style.display = "none";
   kashmirMusic.pause();
@@ -64,7 +68,7 @@ northBtn.onclick = function() {
   northMusic.play();
   music=northMusic;
 }
-// When the user clicks on <span> (x), close the modal
+// When the user clicks on <span> (x), close the modal and stop the music
 northClose.onclick = function() {
   northModal.style.display = "none";
   northMusic.pause();
@@ -87,7 +91,7 @@ fataBtn.onclick = function() {
   fataMusic.play();
   music=fataMusic;
 }
-// When the user clicks on <span> (x), close the modal
+// When the user clicks on <span> (x), close the modal and stop the music
 fataClose.onclick = function() {
   fataModal.style.display = "none";
   fataMusic.pause();
@@ -111,7 +115,7 @@ punjabBtn.onclick = function() {
   punjabMusic.play();
   music=punjabMusic;
 }
-// When the user clicks on <span> (x), close the modal
+// When the user clicks on <span> (x), close the modal and stop the music
 punjabClose.onclick = function() {
   punjabModal.style.display = "none";
   punjabMusic.pause();
@@ -135,7 +139,7 @@ sindhBtn.onclick = function() {
   sindhMusic.play();
   music=sindhMusic;
 }
-// When the user clicks on <span> (x), close the modal
+// When the user clicks on <span> (x), close the modal and stop the music
 sindhClose.onclick = function() {
   sindhModal.style.display = "none";
   sindhMusic.pause();
@@ -158,7 +162,7 @@ kpkBtn.onclick = function() {
   kpkMusic.play();
   music=kpkMusic;
 }
-// When the user clicks on <span> (x), close the modal
+// When the user clicks on <span> (x), close the modal and stop the music
 kpkClose.onclick = function() {
   kpkModal.style.display = "none";
   kpkMusic.pause();
@@ -181,7 +185,7 @@ northVietBtn.onclick = function() {
   northVietMusic.play();
   music=northVietMusic;
 }
-// When the user clicks on <span> (x), close the modal
+// When the user clicks on <span> (x), close the modal and stop the music
 northVietClose.onclick = function() {
   northVietModal.style.display = "none";
   northVietMusic.pause();
@@ -204,7 +208,7 @@ centralBtn.onclick = function() {
   centralMusic.play();
   music=centralMusic;
 }
-// When the user clicks on <span> (x), close the modal
+// When the user clicks on <span> (x), close the modal and stop the music
 centralClose.onclick = function() {
   centralModal.style.display = "none";
   centralMusic.pause();
@@ -227,7 +231,7 @@ southBtn.onclick = function() {
   southMusic.play();
   music=southMusic;
 }
-// When the user clicks on <span> (x), close the modal
+// When the user clicks on <span> (x), close the modal and stop the music
 southClose.onclick = function() {
   southModal.style.display = "none";
   southMusic.pause();

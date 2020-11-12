@@ -7,7 +7,7 @@ var char2=document.getElementById('char2');
 var toPakBtn=document.getElementById('toPak');
 
 var dialogue=document.getElementById('char1_start_sound');
-
+/*start the story when user clicks play button and display and hide relevant elements*/
 playBtn.addEventListener("click",function(){
   playBtn.style.display="none";
   titleContainer.style.display="none";
@@ -30,15 +30,16 @@ function startDialogue(){
 
 var landing=document.getElementById('landingSection');
 var pakistan=document.getElementById('pakistan');
+/*stop audio when user moves to next scene*/
 toPakBtn.addEventListener("click",function(){
   dialogue.pause();
   dialogue.currentTime=0;
   toPak();
 });
+// move to next section when audio ends
 dialogue.addEventListener("ended",function(){
   toPak();
 });
-
 function toPak(){
   landingSection.style.opacity=0;
   setTimeout(function(){
