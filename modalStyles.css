@@ -1,3 +1,4 @@
+/*style modals for different regions of countries*/
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -31,14 +32,12 @@
   z-index: 1000;
   position: relative;
 }
-
 .close:hover,
 .close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
 }
-
 
 .modal-content{
   background-position: center center;
@@ -47,6 +46,7 @@
   height: 80vh;
 }
 
+/*set background images for modals of different regions*/
 #balochistanModal .modal-content{
   background-image: url('images/balochMusic.jpg');
 }

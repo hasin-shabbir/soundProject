@@ -1,3 +1,4 @@
+/*set styles for landing secion*/
 #landingSection{
   background-image: url('images/landing-bg.png');
   background-position: center center;
@@ -7,13 +8,13 @@
   height: 100vh;
   transition: opacity 1.5s linear;
 }
-
+/*position landing title*/
 #titleWrapper{
   justify-content: center;
   vertical-align: center;
   text-align: center;
 }
-
+/*position site title in landing section*/
 #siteTitle{
   margin: 0 auto;
   color: #4e4675;
@@ -25,12 +26,14 @@
   margin-top: 200px;
   text-shadow: 2px 2px 1px black;
 }
+/*make site title responsive*/
 @media (max-width: 768px) {
   #siteTitle{
     font-size: 2em;
     letter-spacing: 20px;
   }
 }
+/*classes for site title's animations from https://tobiasahlin.com/moving-letters/*/
 .ml9 {
   position: relative;
 }
@@ -47,7 +50,7 @@
   line-height: 1em;
 }
 
-
+/*styling the play button*/
 .circleButton{
   position: relative;
   margin: 0 auto;
@@ -73,7 +76,7 @@
   transform: scale(1.15);
   opacity: 0.9;
 }
-
+/*styling and hiding the characters in the first scene*/
 #characters,#toPak{
   display: none;
 }
@@ -87,6 +90,7 @@
 }
 #char1,#char1LScene{position: relative;opacity: 0;transition: opacity 2s linear;}
 #char2,#char2LScene{position: relative;opacity: 0;transition: opacity 2s linear;}
+/*making the first section characters responsive*/
 @media (max-width: 992px) {
   #char1 img, #char2 img, #char1LScene img, #char2LScene img{
     width: 60%;
@@ -100,6 +104,7 @@
   }
 }
 
+/*styling the maps for pakistan and vietnam*/
 .pak_map_wrapper,.viet_map_wrapper{
   width: 48%;
   margin: 0 auto;
@@ -111,6 +116,7 @@
 	transform: translateX(-50%);
 	margin-top: 40px;
 }
+/*make maps responsive*/
 @media (max-width: 992px) {
   .pak_map_wrapper svg{
     position: relative;
@@ -145,6 +151,7 @@
     height: inherit;
   }
 }
+/*style sections for all scenes*/
 #pakistan,#vietnam,#lastScene{
   background: #7CB9E8;
   background-repeat: no-repeat;
@@ -157,12 +164,14 @@
   opacity: 0;
   transition: opacity 1.5s linear;
 }
+/*position the instructions for proceeding with a story*/
 .instructions{
   position: fixed;
   top: 0;
   left: 10%;
   margin: 0;
 }
+/*style regions of both countries*/
 #balochistan,
 #kashmir,
 #north,
@@ -185,6 +194,7 @@
 #central:hover,
 #south:hover{fill: #fff; fill-opacity:0.9;}
 
+/*style button for moving forward to different sections*/
 .myBtn{
 	padding: 20px 10px;
 	position: absolute;
@@ -208,6 +218,7 @@
 	color: white;
 	margin: 0;
 }
+/*style text in the last scene*/
 #lastSceneTxt{
   display: none;
   font-size: 2em;
@@ -221,6 +232,7 @@
   user-select: none;
   margin-bottom: 0;
 }
+/*style the form for the last scene*/
 #locationForm{
   display: none;
   position: relative;
