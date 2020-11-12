@@ -1,5 +1,5 @@
-# soundProject
-# Project Name: Melody
+# Project Name:
+Melody
 # Project Description:
 The project is aimed at allowing the user experience a journey through two countries, Pakistan and Vietnam, through the medium of sound. The theme,
 especially the visuals, have been kept simple in order to direct the focus towards sound. The story starts in the form of a conversation between two friends who proceed on
